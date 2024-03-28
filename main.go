@@ -60,7 +60,7 @@ func draw(w *app.Window) error {
 
 	 // boilDurationInput is a textfield to input boil duration
   var boilDurationInput widget.Editor
-  boilDurationInput.SetText("50")
+  boilDurationInput.SetText("500")
 
   // is the egg boiling?
 
