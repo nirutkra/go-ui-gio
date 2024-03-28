@@ -60,6 +60,7 @@ func draw(w *app.Window) error {
 
 	 // boilDurationInput is a textfield to input boil duration
   var boilDurationInput widget.Editor
+  boilDurationInput.SetText("10")
 
   // is the egg boiling?
 
@@ -204,7 +205,7 @@ func draw(w *app.Window) error {
 									// Define characteristics of the input box
 									boilDurationInput.SingleLine = true
 									boilDurationInput.Alignment = text.Middle
-									boilDurationInput.SetText("10")
+									
 									if boiling && progress < 1 {
 										boilRemain := (1 - progress) * boilDuration
 										// Format to 1 decimal.
