@@ -68,8 +68,6 @@ func draw(w *app.Window) error {
 	type C = layout.Context
 	type D = layout.Dimensions
 
-	
-
 	// is the egg boiling?
 	var boiling bool
 	// listen for events in the incrementer channel
@@ -205,7 +203,7 @@ func draw(w *app.Window) error {
     								ed := material.Editor(th, &boilDurationInput, "sec")
 									// Define characteristics of the input box
 									boilDurationInput.SingleLine = true
-									boilDurationInput.Alignment = text.End
+									boilDurationInput.Alignment = text.Middle
 									boilDurationInput.SetText("10")
 									if boiling && progress < 1 {
 										boilRemain := (1 - progress) * boilDuration
